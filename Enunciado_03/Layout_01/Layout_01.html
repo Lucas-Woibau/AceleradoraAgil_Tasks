@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <title>LAYOUT 01</title>
+    <style>
+        body {
+            width: 750px; /* Largura: 750px de largura */ /* 150px de largura para as colunas menu e 450px largura para o conteúdo, totalizando 750px */
+            height: auto;
+            margin: auto;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            height: 100px; /* Cabeçalho: 100px de altura */
+            background-color: rgb(120, 98, 242);
+            font-size: 28px;
+            color: white;
+        }
+
+        #container_body {
+            display: flex;
+            font-size: 28px;
+        }
+
+        .container {
+            padding: 10px;
+            text-align: center;
+        }
+
+        #menu_esquerdo {
+            background-color: rgb(243, 89, 89);
+            flex: 1;
+            height: 150px; /* Menu esquerdo: 150px de altura */
+            color: white;
+            text-align: left;
+        }
+
+        #conteudo {
+            background-color: rgb(124, 210, 242);
+            flex: 2;
+            height: 450px; /* Conteudo: 450px de altura */
+            color: white;
+        }
+
+        #menu_direito {
+            background-color: rgb(112, 204, 112);
+            flex: 1;
+            height: 150px; /* Menu direito: 150px de altura */
+            color: white;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <header>HEADER</header>
+    <div id="container_body">
+        <div class="container" id="menu_esquerdo">MENU<br>Esquerdo</div>
+        <div class="container" id="conteudo">CONTEÚDO</div>
+        <div class="container" id="menu_direito">MENU<br>Direito</div>
+    </div>
+</body>
+
+</html>

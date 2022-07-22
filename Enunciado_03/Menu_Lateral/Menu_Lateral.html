@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>MENU LATERAL</title>
+    <meta charset="utf-8">
+    <style>
+        body {
+            width: 1100px;
+            height: auto;
+            margin: auto;
+            border: 2px solid black;
+            padding: 0px 200px;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 0px;
+            padding: 20px;
+            height: 70px;
+            background-color: rgb(120, 98, 242);
+            font-size: 38px;
+            color: white;
+        }
+
+        #menu_principal{
+            display: flex;
+            align-items: center;
+            padding: 30px;
+            height: 25px;
+            background-color: rgb(255, 0, 34);
+            font-size: 28px;
+            color: white;
+        }
+
+        #container_body {
+            display: flex;
+            font-size: 23px;
+        }
+
+        .container {
+            padding: 50px 10px;
+            text-align: center;
+        }
+
+        #menu_lateral{
+            padding-right: 0px;
+        }
+
+        #coluna_navegacao {
+            background-color: rgb(226, 220, 220);
+            flex: 1;
+            height: 500px;
+            color: rgb(226, 77, 77);
+            text-align: left;
+            border-right: 3px dashed rgb(255, 0, 34);
+        }
+
+        #menu_lateral li, a{
+            color: rgb(195, 0, 255);
+            font-size: 23px;
+            text-decoration: none;
+            list-style-type: none;
+            padding: 20px 15px 20px 0px;
+        }
+
+        #menu_lateral :hover{
+            font-size: 24px;
+            color: rgb(225, 0, 255);
+            transition: 0.5s;
+        }
+
+        #coluna_principal {
+            background-color: rgb(226, 220, 220);
+            flex: 2;
+            text-align: left;
+            height: 500px;
+            color: rgb(226, 77, 77);
+            border-right: 3px dashed rgb(255, 0, 34);
+        }
+
+        #coluna_apoio {
+            background-color: rgb(226, 220, 220);
+            flex: 1;
+            height: 500px;
+            color: rgb(226, 77, 77);
+            text-align: left;
+        }
+
+        #rodape{
+            display: flex;
+            padding: 30px;
+            height: 35px;
+            background-color: rgb(120, 98, 242);
+            font-size: 23px;
+            color: white;
+            border-top: 1.5px solid red;
+            justify-content: center;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body> <!-- Eu preferi fazer um menu mais simples levando em conta o nível do projeto anterior, 
+    como ele é mais simples, se eu fizesse mais complexo, iria sair de linha de acordo com todo o resto do front -->
+    <header>TOPO</header>
+    <div class="principal" id="menu_principal">Menu Principal</div>
+    <div id="container_body"> 
+        <div class="container" id="coluna_navegacao">COLUNA DE<br>NAVEGAÇÃO
+            <ul id="menu_lateral" class="menu_dropdown">
+                <li><a href=”#”>🏠 Página inicial</a></li>
+                <li><a href=”#”>🧠 Mentorias</a></li>
+                <li><a href=”#”>📚 Cursos</a></li>
+                <li><a href=”#”>📞 Contato</a></li>
+                <li><a href=”#”>💁🏻 Ajuda</a></li>
+            </ul>
+        </div>   
+        <div class="container" id="coluna_principal">COLUNA PRINCIPAL<br>...</div>
+        <div class="container" id="coluna_apoio">COLUNA DE<br>APOIO<br>...</div>
+    </div>
+    <footer id="rodape">...RODAPE...</footer>
+</body>
+
+</html>
